@@ -10,7 +10,7 @@ from timeit import default_timer
 device = 'cpu'
 classes = ['Heart', 'Oblong', 'Oval', 'Round', 'Square']
 
-def load_face_model(weight_path="D:/modelvytec/shape_face.pth"):
+def load_face_model(weight_path="D:/modelkhnt/shape_face.pth"):
     weights = torch.load(weight_path, map_location=torch.device('cpu'))
     model = torchvision.models.efficientnet_b4()
     model.classifier = nn.Linear(model.classifier[1].in_features, len(classes))
@@ -57,7 +57,7 @@ def get_face_shape(
         return 'Please upload other image.'
     
 def main():
-    img_path = 'D:\modelvytec\skincolor.jpg'
+    img_path = 'D:\modelkhnt\skincolor.jpg'
     # start = default_timer()
     model = load_face_model()
     print('Load success')
