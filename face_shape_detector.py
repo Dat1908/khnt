@@ -43,7 +43,7 @@ def get_face_shape(
     target_image_pred_probs = torch.softmax(target_image_pred, dim=1)
     target_image_pred_label = torch.argmax(target_image_pred_probs, dim=1)
 
-    if target_image_pred_probs.max() > 0.3:
+    if target_image_pred_probs.max() > 0.5:
         # plt.figure()
         # plt.imshow(img)
         # plt.title(
