@@ -10,3 +10,5 @@
 - Copy your path of folder ```image_get``` and paste at line 50 and 145 in my_server.ipy
 ## 2. Run program
 - run file my_server.ipy
+## 3. Result
+![image](https://github.com/user-attachments/assets/34303309-954c-4880-930e-4e6b14f715e3)
