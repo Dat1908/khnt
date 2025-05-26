@@ -145,11 +145,4 @@ def get_hair_color(image_path):
 
     hair_color_rgb = hair_color[::-1]
     return tuple(hair_color_rgb)
-    
-# if __name__ == '__main__':
-#     image_path = 'D:\modelvytec\skincolor.jpg'  # get image path to detect
-#     # start = default_timer()
-#     skin_color, hair_color = get_skin_color(image_path), get_hair_color(image_path)
-#     # end = default_timer()
-#     print(f'Skin Tone: {skin_color} | Hair Color RGB: {hair_color}')
-#     # print(f"Predict time: {end-start:.2f} seconds")
+
