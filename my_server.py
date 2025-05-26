@@ -47,7 +47,7 @@ def face_shape_func():
             image = request.files['file']
             if image:
                 # Lưu file3
-                path_to_save = os.path.join(app.config['UPLOAD_FOLDER'], 'static/' + image.filename)
+                path_to_save = os.path.join(app.config['UPLOAD_FOLDER'], 'D:\Python\khnt\image_get' + image.filename)
                 # app.config['UPLOAD_FOLDER'] = r"D:/Python/FusionAIVytec2023/static/"  # Dùng 'r' để tránh lỗi escape sequence
 
                 # # Tạo thư mục nếu chưa có
@@ -142,17 +142,7 @@ def personal_color_func():
             image = request.files['file']
             if image:
                 # Lưu file
-                path_to_save = os.path.join(app.config['UPLOAD_FOLDER'], 'static/' + image.filename)
-                # # Định nghĩa thư mục lưu file
-                # app.config['UPLOAD_FOLDER'] = r"D:/Python/FusionAIVytec2023/static/"  # Dùng 'r' để tránh lỗi escape sequence
-
-                # # Tạo thư mục nếu chưa có
-                # os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-
-                # # Lọc bỏ ký tự đặc biệt trong tên file
-                # # import re
-                # safe_filename = re.sub(r'[/*?:"<>|]', '_', image.filename)
-                # path_to_save = os.path.join(app.config['UPLOAD_FOLDER'], safe_filename)
+                path_to_save = os.path.join(app.config['UPLOAD_FOLDER'], 'D:\Python\khnt\image_get' + image.filename)
                 print("Save = ", path_to_save)
                 image.save(path_to_save)
                 if detect_face(path_to_save) == False:
