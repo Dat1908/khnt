@@ -8,6 +8,7 @@
 - Change path of face shape detection model ```D:/modelkhnt/shape_face.pth``` at line 13 in face_shape_detector.py
 - Change path of hair segmentation model ```D:/modelkhnt/hair_detect.pt``` at line 97 in skin_hair_color_detector.py
 - Copy your path of folder ```image_get``` and paste at line 50 and 145 in my_server.ipy
+- Download model ```https://drive.google.com/drive/folders/1MYEdtyBQOMbQrRi8SDa_OgNu2hhEvf0s?usp=drive_link```
 ## 2. Run program
 - run file my_server.ipy
 ## 3. Result
